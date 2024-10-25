@@ -26,11 +26,11 @@ jobs:
     run: |
      pytest # ou toute autre commande pour exécuter vos tests
 
-     - name: Set up Docker
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y docker.io
-          
+  - name: Set up Docker
+    run: |
+     sudo apt-get update
+     sudo apt-get install -y docker.io
+
 # Nouvelle étape : Construire l'image Docker
   - name: Build Docker image
     run: |
